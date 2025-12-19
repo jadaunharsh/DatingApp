@@ -1,3 +1,5 @@
 <app-nav />
 
-<app-home />
+<div [class.mt-24]="router.url !== '/'" [class.mt-24]="router.url !== '/'" [class.mt-24]="router.url !== '/'">
+    <router-outlet />
+</div>
