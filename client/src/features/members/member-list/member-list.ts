@@ -17,5 +17,10 @@ export class MemberList {
 
   constructor() {
     this.members$ = this.memberService.getMembers();
+    this.members$.subscribe(
+      {
+        next: res => console.log(res)
+      }
+    )
   }
 }
